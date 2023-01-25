@@ -1,0 +1,16 @@
+.card {
+    max-width: 400px;
+    border: 1px solid red;
+    padding: 20px;
+}
+
+
+.ordenar-1{
+    flex-wrap: wrap;
+}
+
+
+.ordenar-2{
+    
+}
+  
