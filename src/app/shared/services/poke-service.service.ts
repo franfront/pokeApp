@@ -14,7 +14,7 @@ export class PokeServiceService {
   constructor(private http: HttpClient) { }
 
   getPokemones() {
-    return this.http.get<PokemonesList>(`${this.baseUrl}/pokemon?limit=20&offset=20`)
+    return this.http.get<PokemonesList>(`${this.baseUrl}/pokemon`)
     .pipe(
       map( this.transformarPokemon)
     )

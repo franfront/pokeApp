@@ -1,16 +1,8 @@
 .card {
-    max-width: 400px;
-    border: 1px solid red;
-    padding: 20px;
-}
+    box-sizing: border-box;
+    margin: 5px;
+    max-width: 220px;
 
-
-.ordenar-1{
-    flex-wrap: wrap;
-}
-
-
-.ordenar-2{
-    
-}
+    background-color: #d5f5e3;
+  }
   
