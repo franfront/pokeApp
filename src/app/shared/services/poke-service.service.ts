@@ -14,7 +14,7 @@ export class PokeServiceService {
   constructor(private http: HttpClient) { }
 
   getPokemones() {
-    return this.http.get<PokemonesList>(`${this.baseUrl}/pokemon`)
+    return this.http.get<PokemonesList>(`${this.baseUrl}/pokemon?limit=1500`)
     .pipe(
       map( this.transformarPokemon)
     )
@@ -39,6 +39,10 @@ export class PokeServiceService {
     return pokemonList;
   }
 
+
+    getBuscarPokemon(termino: number) {
+      return this.http.get<PokemonesList>(`${this.baseUrl}/pokemon/${termino}`)
+    }
 
 
 }

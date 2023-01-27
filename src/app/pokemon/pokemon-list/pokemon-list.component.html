@@ -1,16 +1,25 @@
-<div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-2"  *ngFor="let pokemon of pokemones">
+<div class="container-fluid">
+  <div class="row">
+    <div
+      class="col-3"
+      *ngFor="
+        let pokemon of pokemones | paginate : { itemsPerPage: 20, currentPage: pageAct }"
+    >
+      <div class="card">
+        <img [src]="pokemon.img" class="card-img-top" />
 
-        <div class="card">
-          <img [src]="pokemon.img" class="card-img-top" />
-          <div class="card-body">
-            <h5 class="card-title">{{ pokemon.name }}</h5>
-          </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">{{ pokemon.name | uppercase }}</h5>
         </div>
+       
+          <button  class="btn" style="background-color: #275b89">
+            <a [routerLink]="['/pokemon', pokemon.id]">Ver Más</a>
+            </button>
+
+        
+      </div>
     </div>
+    <pagination-controls class="paginat" (pageChange)="pageAct = $event"></pagination-controls>
+  </div>
+
 </div>
-
-
- 
-
-

@@ -11,6 +11,8 @@ export class PokemonListComponent implements OnInit {
 
   pokemones: Pokemon[] = [];
 
+  pageAct: number = 1;
+
   constructor(private pokeService: PokeServiceService) { }
 
   ngOnInit(): void {
@@ -19,5 +21,7 @@ export class PokemonListComponent implements OnInit {
       console.log(this.pokemones);
     });
   }
+
+  
 
 }
