@@ -1,3 +1,4 @@
+import { PokemonDetails } from 'src/app/shared/interfaces/pokeinter.interfaces';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
@@ -40,8 +41,8 @@ export class PokeServiceService {
   }
 
 
-    getBuscarPokemon(termino: number) {
-      return this.http.get<PokemonesList>(`${this.baseUrl}/pokemon/${termino}`)
+    getBuscarPokemon(termino: string) {
+      return this.http.get<PokemonDetails>(`${this.baseUrl}/pokemon/${termino}`)
     }
 
 

@@ -11,10 +11,15 @@ export interface Result {
 }
 
 export interface Pokemon {
-  
   id: string;
   name: string;
   img: string;
+}
+
+export interface PokemonDetails {
+  id: string;
+  name: string;
+  height: number;
 }
 
 export interface Move {
