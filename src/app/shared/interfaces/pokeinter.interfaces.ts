@@ -20,6 +20,8 @@ export interface PokemonDetails {
   id: string;
   name: string;
   height: number;
+  sprites: Sprites;
+  stats:                    Stat[];
 }
 
 export interface Move {
@@ -34,4 +36,7 @@ export interface Species {
 export interface Stat {
   base_stat: number;
   stat: Species;
+}
+export interface Sprites {
+  front_default: string;
 }

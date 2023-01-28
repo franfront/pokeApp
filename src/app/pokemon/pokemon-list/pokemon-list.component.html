@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <div
-      class="col-3"
+      class="col-lg-3 col-md-3 col-xs-12"
       *ngFor="
         let pokemon of pokemones | paginate : { itemsPerPage: 20, currentPage: pageAct }"
     >
@@ -12,7 +12,7 @@
         <h5 class="card-title text-center">{{ pokemon.name | uppercase }}</h5>
       </div>
      
-        <button  class="btn" style="background-color: #275b89">
+        <button  class="btn" style="background-color: rgb(99, 66, 159)">
           <a [routerLink]="['/pokemon', pokemon.id]">Ver Más</a>
           </button>
     </div>  

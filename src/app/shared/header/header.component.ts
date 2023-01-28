@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { PokeServiceService } from '../services/poke-service.service';
+import { AfterContentChecked, AfterViewInit, Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,14 +8,24 @@ import { PokeServiceService } from '../services/poke-service.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private pokeService: PokeServiceService) { }
+  
 
+  constructor(private route: ActivatedRoute) { }
+  
   ngOnInit(): void {
 
-   
   }
 
- 
 
+  
+
+
+  
+
+  
+
+
+
+ 
 
 }

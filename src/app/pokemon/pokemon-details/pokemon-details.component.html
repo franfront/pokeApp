@@ -1,0 +1,28 @@
+<div class="fondo container-fluid">
+  <div class="row">
+    <div class="col">
+
+      <div class="card">
+        
+        <div class="card-body">
+          <h1 class="text-center card-title">{{ pokemon.name | uppercase }}</h1>
+          <img
+            [src]="pokemon.sprites.front_default"
+            class="card-img-fluid"
+            alt="..."
+          />
+          <h4 class="text-center card-title">STATS </h4>
+          <table class="table table-primary table-striped-columns">
+            <tbody>
+              <tr *ngFor="let estado of pokemon.stats">
+                <td class="stats"> {{ estado.stat.name | uppercase }} : {{ estado.base_stat }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
