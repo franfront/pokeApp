@@ -1,3 +1,4 @@
+import { NotFoundComponent } from './shared/not-found/not-found.component';
 import { PokemonDetailsComponent } from './pokemon/pokemon-details/pokemon-details.component';
 import { PokemonListComponent } from './pokemon/pokemon-list/pokemon-list.component';
 import { NgModule } from '@angular/core';
@@ -13,8 +14,12 @@ const routes: Routes = [
     component: PokemonDetailsComponent
   },
   {
+    path:'404',
+    component: NotFoundComponent,
+  },
+  {
     path: '**',
-    redirectTo: 'home'
+    redirectTo: '404',
   }
 
 

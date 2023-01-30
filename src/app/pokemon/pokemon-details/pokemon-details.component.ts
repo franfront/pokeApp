@@ -9,19 +9,20 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./pokemon-details.component.css'],
 })
 export class PokemonDetailsComponent implements OnInit {
-  pokemon!: PokemonDetails;
-
+  
   constructor(
     private pokeService: PokeServiceService,
     private route: ActivatedRoute
-  ) {}
-
-  ngOnInit(): void {
-    this.route.params.subscribe((params) => {
-      this.pokeService.getBuscarPokemon(params['id']).subscribe((poke) => {
-        console.log(poke);
-        this.pokemon = poke;
+    ) {}
+    pokemon: PokemonDetails;
+    
+    ngOnInit(): void {
+      this.route.params.subscribe((params) => {
+        this.pokeService.getBuscarPokemon(params['id']).subscribe((poke) => {
+          this.pokemon = poke;
+          
+        });
       });
-    });
+    }
   }
-}
+  

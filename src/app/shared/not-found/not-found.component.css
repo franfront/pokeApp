@@ -1,0 +1,21 @@
+.fondo{
+    background: rgb(99, 66, 159);
+    background: linear-gradient(
+    124deg,
+    rgba(99, 66, 159, 0.958420868347339) 23%,
+    rgba(227, 46, 214, 0.958420868347339) 91%
+  );
+  height: 100vh;
+  position: relative;
+
+}
+
+.hijo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 50px;
+    color: #36e0a2;
+}

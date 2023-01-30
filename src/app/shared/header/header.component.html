@@ -1,14 +1,17 @@
 <nav class="navbar navbar-expand-lg" style="background: rgb(123, 83, 197)">
   <div class="container-fluid">
-    <h4 STYLE="color: #36e0a2">PokeApp</h4>
+    <h4> <a style="text-decoration: none; color: #36e0a2" [routerLink]="['/home']" >PokeApp</a> </h4>
 
     <div class="input container">
-      <input
-        type="text" 
-        class="form-control"
-        placeholder="Search..."
-        aria-label="Sizing example input"
-      />
+      <form (submit)="onSearch(inputSearch.value)">
+        <input
+          #inputSearch
+          type="text"
+          class="form-control"
+          placeholder="Search..."
+          aria-label="Sizing example input"
+        />
+      </form>
     </div>
   </div>
 </nav>
