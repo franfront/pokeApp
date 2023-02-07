@@ -5,17 +5,21 @@
       *ngFor="
         let pokemon of pokemones | paginate : { itemsPerPage: 20, currentPage: pageAct }"
     >
-    <div class="card">
-      <img [src]="pokemon.img" class="card-img-top" />
-  
-      <div class="card-body">
-        <h5 class="card-title text-center">{{ pokemon.name | uppercase }}</h5>
-      </div>
-     
-        <button  class="btn" style="background-color: rgb(99, 66, 159)">
-          <a [routerLink]="['/pokemon', pokemon.id]">Ver Más</a>
-          </button>
-    </div>  
+    <a [routerLink]="['/pokemon', pokemon.id]">
+      <div class="card">
+        <img [src]="pokemon.img" class="card-img-top" />
+    
+        <div class="card-body">
+          <h5 class="card-title text-center">{{ pokemon.name | uppercase }}</h5>
+        </div>
+       
+          <button  class="btn" style="background-color: rgb(16, 78, 121)">
+            <a >
+              Ver Más</a>
+            </button>
+      </div>  
+
+    </a>
   </div>
     <pagination-controls class="paginat" (pageChange)="pageAct = $event"></pagination-controls>
   </div>

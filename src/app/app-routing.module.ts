@@ -7,27 +7,24 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    component: PokemonListComponent
+    component: PokemonListComponent,
   },
   {
     path: 'pokemon/:id',
-    component: PokemonDetailsComponent
+    component: PokemonDetailsComponent,
   },
   {
-    path:'404',
+    path: '404',
     component: NotFoundComponent,
   },
   {
     path: '**',
-    redirectTo: '404',
-  }
-
-
-]
-
+    redirectTo: 'home',
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -1,10 +1,6 @@
 .container-fluid {
-  background: rgb(99, 66, 159);
-  background: linear-gradient(
-    124deg,
-    rgba(99, 66, 159, 0.958420868347339) 23%,
-    rgba(227, 46, 214, 0.958420868347339) 91%
-  );
+  background: rgb(66,151,159);
+  background: linear-gradient(329deg, rgba(66,151,159,0.958420868347339) 23%, rgba(46,110,227,0.958420868347339) 91%);
 }
 
 .paginat {
@@ -18,19 +14,19 @@
   margin: 10px 0px 10px 0px;
   max-width: 400px;
 
-  background-color: rgb(123, 83, 197);
+  background-color: rgb(25, 86, 140);
   box-shadow: inset 0px 0px 5px 1px rgb(20, 55, 95);
 }
 
 .card-title {
   font-size: 20px;
   font-weight: bold;
-  color: #36e0a2;
+  color: #2aa97a;
   display: flexbox;
 }
 
 a {
-  color: #36e0a2;
+  color: #0e714d;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;

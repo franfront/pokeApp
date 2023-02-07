@@ -1,12 +1,9 @@
 .card {
   box-sizing: border-box;
   max-width: 500px;
-  background: rgb(99, 66, 159);
-  background: linear-gradient(
-    291deg,
-    rgba(129, 78, 223, 0.958) 23%,
-    rgba(158, 31, 150, 0.958) 91%
-  );
+  background: rgb(66,151,159);
+  background: linear-gradient(329deg, rgba(66,151,159,0.958420868347339) 23%, rgba(46,110,227,0.958420868347339) 91%);
+
   box-shadow: inset 0px 0px 5px 1px rgb(20, 55, 95);
   margin: 0 auto;
   margin-top: 10px;
@@ -14,19 +11,16 @@
 }
 
 .fondo {
-  background: rgb(99, 66, 159);
-  background: linear-gradient(
-    291deg,
-    rgba(99, 66, 159, 0.958420868347339) 23%,
-    rgba(227, 46, 214, 0.958420868347339) 91%
-  );
+  background: rgb(66,151,159);
+  background: linear-gradient(329deg, rgba(66,151,159,0.958420868347339) 23%, rgba(46,110,227,0.958420868347339) 91%);
+
 
   position: relative;
 }
 .card-title {
   font-size: 20px;
   font-weight: bold;
-  color: #36e0a2;
+  color: #4ff132;
   display: flexbox;
 }
 
@@ -41,14 +35,14 @@ img {
   justify-content: space-between;
   margin: 10px 10px;
   font-weight: bold;
-  background-color: #4a1c68;
-  color: rgb(199, 71, 238);
+  background-color: #104d85;
+  color: rgb(21, 237, 68);
   border-radius: 20px;
 }
 
 .stats:hover {
-  background-color: #41185c;
-  color: rgb(196, 42, 243);
+  color: #115416;
+  background-color: rgb(92, 214, 233);
   border-radius: 20px;
   box-shadow: 0px 0px 5px 1px rgb(20, 55, 95);
 }
@@ -56,7 +50,7 @@ img {
 .tipos{
   display: flex;
   justify-content: center;
-  color: #36e0a2;
+  color: #4ff132;
   font-weight: bold;
   ;
 }
